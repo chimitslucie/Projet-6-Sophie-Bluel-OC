@@ -186,3 +186,30 @@ footer nav ul {
 	margin: 2em
 }
 
+/* Filter */
+.filters {
+	margin-bottom: 51px;
+	text-align: center;
+}
+
+.btn__filter {
+	border: 1px solid #1D6154;
+	border-radius: 60px;
+	color: #1D6154;
+	font-family: "Syne";
+	font-size: 16px;
+	text-align: center;
+	background-color: white;
+	margin-right: 10px;
+	padding: 9px 29px;
+	cursor: pointer;
+}
+
+.btn__filter:last-child {
+	margin-right: 0;
+}
+
+.btn__filter.active {
+	background-color: #1D6154;
+	color: white;
+}
