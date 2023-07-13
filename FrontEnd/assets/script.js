@@ -1,5 +1,4 @@
 //  home page --- projet
-
 function loadWorks() {
     fetch("http://localhost:5678/api/works")
         .then((res) => res.json())
@@ -33,7 +32,6 @@ function loadWorks() {
 loadWorks();
 
 // Filtres
-
 function loadCategories() {
     fetch("http://localhost:5678/api/categories")
         .then((res) => res.json())
@@ -88,3 +86,7 @@ function loadCategories() {
 }
 
 loadCategories();
+
+// modal
+const token = localStorage.getItem('token');
+
