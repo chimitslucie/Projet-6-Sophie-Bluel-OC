@@ -14,63 +14,71 @@
         <link rel="stylesheet" href="./assets/style.css" />
     </head>
     <body class="login__page">
-        <header>
-            <h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
-            <nav>
-                <ul>
-                    <li>projets</li>
-                    <li>contact</li>
-                    <li class="active">login</li>
-                    <li>
-                        <img
-                            src="./assets/icons/instagram.png"
-                            alt="Instagram"
-                        />
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <article class="login">
-                <h2 class="login__title">Log in</h2>
-                <p class="error"></p>
-                <form method="post" class="form" action="#">
-                    <div class="group-form">
-                        <div class="group-form-email">
-                            <label for="email" class="form__title">E-mail</label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                class="email__form form__input"
-                                value="sophie.bluel@test.tld"
-                                required
+        <div class="main__container">
+            <header>
+                <h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html#portfolio">projets</a></li>
+                        <li><a href="./index.html#contact">contact</a></li>
+                        <li class="active">login</li>
+                        <li>
+                            <img
+                                src="./assets/icons/instagram.png"
+                                alt="Instagram"
                             />
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <article class="login">
+                    <h2 class="login__title">Log in</h2>
+                    <p class="error"></p>
+                    <form method="post" class="form" action="#">
+                        <div class="group-form">
+                            <div class="group-form-email">
+                                <label for="email" class="form__title"
+                                    >E-mail</label
+                                >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="email__form form__input"
+                                    value="sophie.bluel@test.tld"
+                                    required
+                                />
+                            </div>
+                            <div class="group-form-password">
+                                <label for="password" class="form__title"
+                                    >Mot de passe</label
+                                >
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    class="password__form form__input"
+                                    value="S0phie"
+                                    required
+                                />
+                            </div>
                         </div>
-                        <div class="group-form-password">
-                            <label for="password" class="form__title">Mot de passe</label>
-                            <input
-                                type="password"
-                                name="password"
-                                id="password"
-                                class="password__form form__input"
-                                value="S0phie"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <button type="submit" class="btn__form">Se connecter</button>
-                </form>
-                <a href="#" class="password__link">Mot de passe oublié</a>
-            </article>
-        </main>
-        <footer>
-            <nav>
-                <ul>
-                    <li>Mentions Légales</li>
-                </ul>
-            </nav>
-        </footer>
+                        <button type="submit" class="btn__form">
+                            Se connecter
+                        </button>
+                    </form>
+                    <a href="#" class="password__link">Mot de passe oublié</a>
+                </article>
+            </main>
+            <footer>
+                <nav>
+                    <ul>
+                        <li>Mentions Légales</li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
 
         <script src="./assets/login.js"></script>
     </body>

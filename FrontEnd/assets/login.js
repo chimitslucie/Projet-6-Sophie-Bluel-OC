@@ -24,7 +24,6 @@ formLogin.addEventListener("submit", async (e) => {
 
     if (response.ok) {
         let result = await response.json();
-        console.log(result);
         localStorage.setItem('token', result.token);
         window.location.href = './index.html';
     } else {
