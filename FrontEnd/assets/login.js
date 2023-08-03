@@ -1,5 +1,3 @@
-const loginUrl = "http://localhost:5678/api/users/login";
-
 let formLogin = document.querySelector(".form");
 let error = document.querySelector(".error")
 
